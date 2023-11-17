@@ -1,0 +1,2100 @@
+@font-face {
+    font-family: 'NoirPro-Bold';
+    src: url("../fonts/NoirPro-Bold.otf")
+}
+
+@font-face {
+    font-family: 'NoirPro-Medium';
+    src: url("../fonts/NoirPro-Medium.otf")
+}
+
+@font-face {
+    font-family: 'NoirPro-Regular';
+    src: url("../fonts/NoirPro-Regular.otf")
+}
+
+@font-face {
+    font-family: 'NoirPro-SemiBold';
+    src: url("../fonts/NoirPro-SemiBold.otf")
+}
+
+@font-face {
+    font-family: 'NoirPro-Light';
+    src: url("../fonts/NoirPro-Light.otf")
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'NoirPro-Bold';
+    text-transform: capitalize;
+}
+
+p,
+ul,
+li,
+a,
+button {
+    font-family: 'NoirPro-Light';
+}
+
+a,
+button,
+input,
+span,
+textarea {
+    margin: 0;
+    padding: 0
+}
+
+ol,
+p,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+
+body {
+    overflow-x: hidden
+}
+
+main {
+    overflow: hidden
+}
+
+a {
+    text-decoration: none
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 0 !important;
+    box-shadow: none !important
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px
+}
+
+/* header css start here */
+
+.main-header nav.navbar {
+    justify-content: space-between;
+}
+
+.main-header img.logo {
+    width: 50%;
+    background: #000;
+}
+
+.main-header .navbar-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar-buttons a {
+    font-size: 15px;
+    border-radius: 7px;
+    padding: 10px 40px;
+    text-transform: capitalize;
+    transition: .3s ease-in-out;
+    background: #2B0077;
+    border: 2px solid;
+    font-weight: 400;
+    color: #fff;
+}
+
+.navbar-buttons a.live-cht {
+    background-color: transparent;
+    border-color: #4d05cb;
+    color: #4d05cb;
+}
+
+.navbar-buttons a.live-cht:hover {
+    background-color: ;
+    border-color: ;
+}
+
+/* header css end here */
+/* sec-banner css start here */
+
+section.new-ser-banner {
+    padding: 140px 0;
+    margin: 0;
+    background: url(../images/banner.png)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+section.new-ser-banner .banner-content .banner-heading {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 500
+}
+
+section.new-ser-banner .banner-content .banner-para {
+    color: #fff;
+    font-weight: 400;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+.new-ser-banner .ban-right-form button.btn.btn-send {
+    background: #4D05CB;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 6px;
+    min-height: 50px;
+    max-height: 50px;
+    font-family: Gilroy-Medium;
+    transition: .3s ease-in-out;
+    color: #fff;
+}
+
+.new-ser-banner .ban-right-form button.btn.btn-send:hover {
+    background: #000;
+    border: 2px solid;
+    color: #ffff
+}
+
+.new-ser-banner .banner-btns button.start-btn,
+.sec-contact-form .form-group button.submit-btn,
+.sec-story-book .story-details button.start-btn {
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 12px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: .3s ease-in-out;
+    background: #fff;
+    color: #4D05CB;
+    border: 2px solid;
+    font-weight: 400
+}
+
+.new-ser-banner .banner-btns button.start-btn:hover {
+    background: 0 0;
+    border: 2px solid #fff;
+    color: #ffff
+}
+
+.ban-right-form form {
+    display: flex;
+    justify-content: end
+}
+
+.form-wrap {
+    background-color: #fff;
+    padding: 20px 25px;
+    width: 70%;
+    border-radius: 10px;
+    position: relative
+}
+
+.form-wrap h3.heading {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #000
+}
+
+.form-wrap h3.heading span {
+    color: #02dfbf
+}
+
+
+.form-wrap input,
+.form-wrap textarea {
+    border: none;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+    padding-left: 0;
+    padding-bottom: 20px
+}
+
+.flipclock {
+    display: flex;
+    padding: 40px 20px 40px 0;
+    box-sizing: border-box
+}
+
+.flipclock .leaf {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4px;
+    perspective: 300px
+}
+
+.flipclock .leaf::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 8px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+.bottom,
+.leaf-back,
+.leaf-front,
+.top {
+    position: relative;
+    display: block;
+    height: 64px;
+    width: 120px;
+    background: linear-gradient(356deg, #353535, #6C6C6C);
+    color: #fff;
+    overflow: hidden
+}
+
+.bottom span,
+.leaf-back span,
+.leaf-front span,
+.top span {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 128px;
+    text-align: center;
+    font-family: Impact, sans serif;
+    font-size: 80px;
+    line-height: 128px;
+    transform: translateX(-50%)
+}
+
+.leaf._3-digits .bottom,
+.leaf._3-digits .leaf-back,
+.leaf._3-digits .leaf-front,
+.leaf._3-digits .top {
+    width: 148px
+}
+
+.leaf-front,
+.top {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+
+.leaf-front span,
+.top span {
+    top: 0
+}
+
+.leaf-front {
+    position: absolute;
+    z-index: 10;
+    transform-origin: bottom center;
+    transform: rotateX(0);
+    transform-style: preserve-3d;
+    transition-delay: 0.3s
+}
+
+.bottom,
+.leaf-back {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-style: solid;
+    border-top-width: 1px
+}
+
+.bottom span,
+.leaf-back span {
+    bottom: 0
+}
+
+.leaf-back {
+    position: absolute;
+    top: 64px;
+    z-index: 10;
+    transform-origin: top center;
+    transform: rotateX(90deg);
+    transform-style: preserve-3d;
+    transition-delay: 0s
+}
+
+.bottom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 100%);
+    filter: blur(10px)
+}
+
+.flip .leaf-front {
+    transform: rotateX(-90deg);
+    transition: transform .3s ease-in, background-color .3s ease-in, color .3s ease-in;
+    color: #000;
+    background-color: #737373
+}
+
+.flip .leaf-back {
+    transform: rotateX(0);
+    transition: transform .3s ease-in .3s, background-color .3s ease-in .3s, color .3s ease-in .3s
+}
+
+.flip .bottom::before {
+    transition: height .3s ease-in-out .15s;
+    height: 100%
+}
+
+.form-wrap::before {
+    position: absolute;
+    top: -80px;
+    content: "";
+    right: -60px;
+    bottom: 0;
+    background: url(../images/sake.png) 0 0/contain no-repeat;
+    width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    z-index: 1
+}
+
+/* sec-banner css start here */
+
+/* sec-story  css start here */
+
+.sec-story-book {
+    margin: 0;
+    position: relative;
+    overflow: hidden
+}
+
+.sec-story-book .story-book img {
+    width: 100%;
+    min-height: 595px;
+    max-height: 595px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.sec-story-book .story-details h4 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: capitalize
+}
+
+.sec-story-book .story-details p {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 60px 0 0;
+    margin: 0 0 15px
+}
+
+.sec-story-book .story-details button.start-btn:hover {
+    background: 0 0;
+    border: 2px solid #000;
+    color: #000
+}
+
+/* sec-story  css end here */
+/* sec-cta css start here */
+section.sec-cta {
+    padding: 30px 0;
+    background: url(../images/cta-bg.png) no-repeat;
+    color: #fff;
+    background-size: cover;
+    object-position: center;
+    position: relative;
+}
+
+.sec-cta button.btn.live-btn {
+    width: 150px;
+    background: #091a39;
+    border: 1px solid;
+    color: ;
+    text-transform: capitalize;
+    border-radius: 6px;
+    transition: .3s ease-in-out
+}
+
+.sec-cta button.btn.live-btn:hover {
+    background: 0 0;
+    border: 1px solid #fff
+}
+
+.cta-details h2 {
+    color: ;
+    font-size: 44px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0 0 20px
+}
+
+.cta-details p {
+    margin: 0 0 25px;
+    padding: 0;
+    font-size: 15px
+}
+
+.cta-img {
+    position: relative;
+    top: -30px
+}
+
+.cta-img img {
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* sec-cta css  end here */
+/* sec-portfolio css  start here */
+
+section.sec-portfolio {
+    padding: 100px 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative
+}
+
+.sec-portfolio .pt-portfolio-wrap {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec-portfolio .pt-new-img img {
+    width: 180px;
+    min-height: 250px;
+    max-height: 250px;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.sec-portfolio .pt-new-img img:hover {
+    transform: scale(1.1);
+}
+
+.sec-portfolio .nav-tabs .nav-link {
+    width: 155px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 0px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none
+}
+
+.sec-portfolio .nav-tabs .nav-link.active {
+    color: ;
+    padding-bottom: 19px;
+    margin-bottom: -3px;
+    border-bottom: 3px solid
+}
+
+.sec-portfolio div#nav-tab {
+    border-bottom: 3px solid #E8E8E8;
+    padding: 20px 0 0px;
+    margin: 0
+}
+
+.sec-portfolio .portfolio-title {
+    text-align: center
+}
+
+.sec-portfolio .portfolio-title h3 {
+    color: #091a39;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Gilroy-Bold
+}
+
+.sec-portfolio .portfolio-title p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #091a39
+}
+
+/* sec-portfolio css  end here */
+
+/* customer-feedback-wrap css  start here */
+
+section.customer-feedback-wrap {
+    padding: 50px 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative
+}
+
+.feedback-content-slider .slick-arrow {
+    top: inherit;
+    bottom: 0;
+    left: inherit;
+    position: absolute;
+    background: 0 0;
+    border: none;
+    font-size: 0;
+    z-index: 9
+}
+
+.feedback-content-slider .slick-arrow:hover::before {
+    color: #a4a6a7
+}
+
+.feedback-content-slider .slick-prev {
+    right: 75px
+}
+
+.cross-btn,
+.feedback-content-slider .slick-next {
+    right: 20px
+}
+
+.feedback-content-slider .slick-prev::before {
+    content: "\f104"
+}
+
+.feedback-content-slider .slick-next::before {
+    content: "\f105"
+}
+
+.feedback-content-slider .slick-next::before,
+.feedback-content-slider .slick-prev::before {
+    font-family: "Font Awesome 6 Pro";
+    font-size: 30px;
+    background: 0 0;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    display: block;
+    opacity: 1
+}
+
+.customer-feedbcack-images img {
+    width: 100%;
+    min-height: 460px;
+    max-height: 460px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.customer-feedback-content {
+    padding: 0;
+    margin: 0
+}
+
+.customer-feedback-wrap .feedback-inner p {
+    padding: 15px 0 20px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid #091a39;
+    color: #091a39;
+    font-size: 16px
+}
+
+.customer-feedback-wrap .feedback-box .feedback-details h4 {
+    padding: 0;
+    margin: 0;
+    color: #091a39;
+    font-size: 39px;
+    line-height: 46px;
+    text-transform: capitalize;
+    font-weight: 700
+}
+
+.feedback-content-head h2 {
+    color: #091a39;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.feedback-info p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #091a39
+}
+
+/* customer-feedback-wrap css  end here */
+
+
+section.sec-services {
+    background: url(../images/services-bg.png) no-repeat;
+    padding: 60px 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sec-process .process-title,
+.sec-services .services-title {
+    text-align: center;
+    margin: 0 0 50px;
+    padding: 0
+}
+
+.sec-process .process-title h4,
+.sec-services .services-title h4 {
+    font-size: 60px;
+    color: #fff;
+    margin: 0 0 35px;
+    padding: 0
+}
+
+.sec-process .process-title p,
+.sec-services .services-title p {
+    font-size: 20px;
+    color: #fff
+}
+
+.sec-services .services-card {
+    padding: 35px 15px;
+    background: #292929;
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+    min-height: 300px;
+    max-height: 300px
+}
+
+.sec-services .services-details-img img {
+    width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 0 20px
+}
+
+.sec-process .process-details,
+.sec-services .services-details {
+    color: #fff
+}
+
+.sec-services .services-card p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 0 10px 0 0;
+    height: 75px
+}
+
+.sec-process .process-details h5,
+.sec-services .services-details h5 {
+    font-size: 20px;
+    font-weight: 200
+}
+
+.sec-services-inner {
+    padding: 40px 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background:
+}
+
+.services-inner-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.services-box {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.services-img img {
+    width: 75px;
+    min-height: 74px;
+    max-height: 75px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 15px 0 0
+}
+
+.services-details h4,
+.services-details h4 span {
+    font-size: 25px;
+    font-family: Gilroy-SemiBold;
+}
+
+section.sec-process {
+    background: url(../images/process.png) center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 80px 0;
+
+}
+
+.sec-process .process-card {
+    padding: 25px 20px;
+    background: #292929;
+    margin: 0;
+    border-radius: 0
+}
+
+.pop-up-modal-bg .modal-body,
+.pop-up-modal-bg2 .modal-content {
+    background-image: block;
+    background-size: cover;
+    height: 100% !important;
+    position: relative
+}
+
+.sec-process .process-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px
+}
+
+.sec-process .process-details-img img {
+    width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    object-fit: cover;
+    object-position: center
+}
+
+.sec-process .process-details h6 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color:
+}
+
+.sec-process .process-card p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 25px;
+    min-height: fit-content;
+    max-height: fit-content;
+    height: 80px
+}
+
+section.sec-contact-form {
+    padding: 50px 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background: #101114;
+}
+
+.sec-contact-form .contact-image img {
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: contain;
+    object-position: center
+}
+
+.sec-contact-form .form-group {
+    margin: 0 0 20px;
+    position: relative;
+    padding: 10px 0 0
+}
+
+.sec-contact-form .form-group input {
+    background: 0 0;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize
+}
+
+.sec-contact-form .form-group input::placeholder {
+    color: #fff;
+    font-size: 18px
+}
+
+.sec-contact-form .form-group textarea::placeholder {
+    color: #fff;
+    font-size: 18px
+}
+
+.sec-contact-form .contact-details {
+    padding: 20px 0;
+    margin: 0 0 20px
+}
+
+.sec-contact-form .contact-details h2 {
+    color: #fff;
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 61px;
+    font-size: 54px;
+}
+
+.sec-contact-form .contact-details p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px
+}
+
+.sec-contact-form .form-group textarea {
+    width: 100%;
+    height: 120px;
+    background: 0 0;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+    resize: none;
+    outline: 0;
+    padding: 10px 5px;
+    box-shadow: none
+}
+
+.sec-contact-form .form-group button.submit-btn:hover {
+    background: 0 0;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+footer {
+    background: #000;
+    padding: 30px 0;
+    margin: 0
+}
+
+.ft-details p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize
+}
+
+.pop-up-modal-bg .modal-body {
+    background-color: #000;
+    flex: 1 1 auto;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 50px
+}
+
+.pop-up-modal-bg .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: none;
+    border-radius: .3rem;
+    outline: 0;
+    margin: 0 80px
+}
+
+.popup-modal-content h3 {
+    color: #fff;
+    font-size: 28px;
+    padding: 0 0 20px
+}
+
+.popup-modal-content h4 {
+    color: #fff;
+    padding: 5px 0;
+    font-weight: 700
+}
+
+.popup-modal-content span {
+    font-size: 40px;
+    color: ;
+    font-weight: 700
+}
+
+.pop-up-modal-bg2 .modal-content {
+    background-color: #000;
+    flex: 1 1 auto;
+    padding: 0;
+    width: 100%;
+    border-radius: 20px
+}
+
+.pop-up-modal-bg2 .popup-modal-content h3 {
+    color: #fff;
+    padding: 0 0 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Gilroy-bold
+}
+
+.form-floating input.form-control {
+    text-transform: capitalize
+}
+
+.form-floating label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    font-family: Gilroy-medium
+}
+
+.pop-up-modal-bg2 .popup-modal-content h4 {
+    color: #fff;
+    padding: 5px 0;
+    font-weight: 700;
+    font-family: Gilroy-bold
+}
+
+.pop-up-modal-bg2 .popup-modal-head {
+    padding: 30px 40px
+}
+
+.pop-up-modal-bg2-img img {
+    width: 100%;
+    min-height: 350px;
+    max-height: 350px;
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    top: -70px;
+}
+
+.main-modal-bg-btn button {
+    background-color: ;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+    transition: .3s;
+    margin: 10px 0;
+    border: 2px solid #000;
+    color: black;
+    font-size: 18px;
+    font-family: Gilroy-medium;
+    font-weight: 500
+}
+
+.main-modal-bg-btn button:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cross-btn {
+    background-color: #fff;
+    box-shadow: 0 0 6px #00000029;
+    border-radius: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 20px
+}
+
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+
+    .sec-process .process-card,
+    .sec-services .services-card {
+        margin: 0 0 20px
+    }
+
+    .main-header .navbar-buttons {
+        width: 30%;
+    }
+
+    .main-header .navbar-buttons a {
+        padding: 10px 20px;
+    }
+
+    section.new-ser-banner {
+        padding: 120px 0 70px
+    }
+
+    .form-wrap::before {
+        width: 125px;
+        min-height: 125px;
+        max-height: 125px
+    }
+
+    .sec-process .process-title h4,
+    .sec-services .services-title h4,
+    .sec-portfolio .portfolio-title h3,
+    .sec-contact-form .contact-details h2 {
+        font-size: 45px;
+        line-height: 52px;
+        margin-bottom: 10px;
+    }
+
+    .sec-process .process-title p,
+    .sec-services .services-title p,
+    .sec-portfolio .portfolio-title p,
+    .sec-contact-form .contact-details p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+    section.new-ser-banner,
+    section.sec-portfolio,
+    section.sec-services {
+        padding: 50px 0
+    }
+
+    .form-wrap::before {
+        top: -30px;
+        width: 100px;
+        left: -70px;
+        min-height: 100px;
+        max-height: 100px;
+    }
+
+    .ban-right-form form {
+        width: 90%;
+    }
+
+    .ban-right-form form .form-wrap h3.heading {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .main-header .navbar-buttons {
+        width: 50%;
+    }
+
+    .main-header .navbar-buttons a {
+        padding: 10px 20px;
+    }
+
+    .sec-story-book .story-details h4 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .services-details h4 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .sec-contact-form .contact-details h2,
+    .sec-services .services-title h4,
+    section.new-ser-banner .banner-content .banner-heading {
+        font-size: 50px
+    }
+
+    .sec-process .process-title h4,
+    .sec-services .services-title h4,
+    .sec-portfolio .portfolio-title h3,
+    .sec-contact-form .contact-details h2,
+    section.new-ser-banner .banner-content .banner-heading {
+        font-size: 45px;
+        line-height: 52px;
+        margin-bottom: 10px;
+    }
+
+    .sec-process .process-title p,
+    .sec-services .services-title p,
+    .sec-portfolio .portfolio-title p,
+    .sec-contact-form .contact-details p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .form-wrap {
+        width: 90%
+    }
+
+    .sec-services .services-card {
+        padding: 25px 15px;
+        margin: 0 0 20px
+    }
+
+    .sec-process .process-title p,
+    .sec-services .services-title p {
+        font-size: 18px
+    }
+
+    .cta-details h2 {
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 10px;
+    }
+
+    .sec-process .process-title h4 {
+        font-size: 50px;
+        margin: 0 0 25px
+    }
+
+    .sec-process .process-card {
+        margin: 0 0 20px
+    }
+
+    .sec-contact-form .contact-details p {
+        font-size: 17px
+    }
+
+    .customer-feedback-wrap .feedback-box .feedback-details h4 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    section.new-ser-banner,
+    section.sec-services {
+        padding: 30px 0
+    }
+
+    .pop-up-modal-bg2 .popup-modal-content h3 {
+        font-size: 30px
+    }
+
+    .pop-up-modal-bg2-img img {
+        min-height: 250px;
+        max-height: 250px;
+        top: -40px;
+    }
+
+    .form-wrap::before {
+        top: -21px;
+        width: 130px;
+        min-height: 130px;
+        max-height: 130px;
+        left: -38px;
+    }
+
+    section.new-ser-banner .banner-content .banner-heading {
+        font-size: 40px;
+        line-height: 45px
+    }
+
+    .flipclock {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: 0;
+        padding: 20px 0
+    }
+
+    .leaf {
+        margin: 0 .6666666667vw
+    }
+
+    .leaf::after {
+        margin-top: 1.3333333333vw;
+        font-size: 2.3333333333vw
+    }
+
+    .bottom,
+    .leaf-back,
+    .leaf-front,
+    .top {
+        height: 10.6666666667vw;
+        width: 20vw
+    }
+
+    .bottom span,
+    .leaf-back span,
+    .leaf-front span,
+    .top span {
+        height: 21.3333333333vw;
+        font-size: 13.3333333333vw;
+        line-height: 21.3333333333vw
+    }
+
+    .leaf._3-digits .bottom,
+    .leaf._3-digits .leaf-back,
+    .leaf._3-digits .leaf-front,
+    .leaf._3-digits .top {
+        width: 24.6666666667vw
+    }
+
+    .leaf-front,
+    .top {
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw
+    }
+
+    .bottom,
+    .leaf-back {
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw
+    }
+
+    .leaf-back {
+        top: 10.6666666667vw
+    }
+
+    section.new-ser-banner .banner-content .banner-para {
+        line-height: 25px;
+        font-size: 17px
+    }
+
+    .cta-details p,
+    .new-ser-banner .banner-btns button.start-btn,
+    .sec-portfolio .portfolio-title p,
+    .sec-process .process-title p {
+        font-size: 16px
+    }
+
+    .form-wrap h3.heading,
+    .sec-story-book .story-details h4 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .form-wrap {
+        margin: 40px 0 0;
+        padding: 20px;
+        width: 80%;
+    }
+
+    br {
+        display: none
+    }
+
+    .form-wrap h3.heading {
+        padding-left: 70px
+    }
+
+    .sec-story-book {
+        padding: 35px 0
+    }
+
+    .sec-story-book .story-details p {
+        padding: 0;
+        font-size: 18px
+    }
+
+    .sec-story-book .story-book img {
+        min-height: 350px;
+        max-height: 350px;
+        margin: 20px 0 0;
+        width: 60%
+    }
+
+    .sec-story-book .story-details button.start-btn {
+        margin: 0
+    }
+
+    .sec-services .services-title p {
+        font-size: 18px
+    }
+
+    .sec-services .services-title h4 {
+        font-size: 40px
+    }
+
+    .services-details h4 {
+        font-size: 20px
+    }
+
+    .services-img img {
+        margin: 0 20px 15px 0;
+        width: 60px;
+        min-height: 60px;
+        max-height: 60px
+    }
+
+    .sec-services .services-card {
+        margin: 0 0 15px;
+        padding: 20px
+    }
+
+    .cta-details h2,
+    .feedback-content-slider .slick-next::before,
+    .feedback-content-slider .slick-prev::before,
+    .sec-process .process-details h5,
+    .sec-process .process-details h6 {
+        font-size: 25px
+    }
+
+    section.sec-cta {
+        padding: 0 0 20px
+    }
+
+    section.sec-portfolio,
+    section.sec-process {
+        padding: 50px 0
+    }
+
+    .customer-feedback-wrap .feedback-box .feedback-details h4,
+    .sec-portfolio .portfolio-title h3 {
+        font-size: 35px
+    }
+
+    .pt-new-img img {
+        width: 100px;
+        min-height: 115px;
+        max-height: 115px;
+        object-fit: contain;
+        object-position: center
+    }
+
+    .sec-process .process-title h4 {
+        font-size: 35px;
+        margin: 0 0 25px
+    }
+
+    .sec-process .process-card {
+        margin: 0 0 15px
+    }
+
+    .sec-process .process-card p {
+        font-size: 14px
+    }
+
+    .feedback-content-head h2 {
+        font-size: 25px;
+        margin: 0 10px
+    }
+
+    .customer-feedback-wrap .feedback-inner p {
+        font-size: 15px
+    }
+
+    .customer-feedbcack-images img {
+        width: 50%;
+        min-height: 300px;
+        max-height: 300px;
+        margin: 20px 0 0
+    }
+
+    section.sec-contact-form {
+        padding: 25px 0
+    }
+
+    .sec-contact-form .contact-image img {
+        min-height: 320px;
+        max-height: 320px
+    }
+
+    .sec-contact-form .contact-details h2 {
+        font-size: 50px
+    }
+
+    .sec-contact-form .contact-details p {
+        font-size: 16px;
+        line-height: 25px
+    }
+
+    footer {
+        padding: 17px 0
+    }
+
+    .ft-details p {
+        font-size: 17px
+    }
+
+    .sec-services .services-card p {
+        font-size: 16px;
+        height: 75px
+    }
+
+    .sec-services .services-details h5 {
+        font-size: 20px;
+        margin: 0 0 20px
+    }
+
+    .sec-services .services-title {
+        margin: 0 0 25px
+    }
+
+    .sec-services .services-details-img img {
+        width: 50px;
+        min-height: 50px;
+        max-height: 50px
+    }
+
+    .cta-img {
+        top: -58px
+    }
+
+    .cta-img img {
+        min-height: 300px;
+        max-height: 300px;
+        object-fit: scale-down
+    }
+
+    .sec-portfolio .nav-tabs .nav-link {
+        width: 120px;
+        margin-right: 10px
+    }
+
+    .sec-portfolio .pt-new-img img {
+        width: 200px;
+        min-height: 200px;
+        max-height: 200px
+    }
+
+    .main-header nav.navbar {
+        flex-wrap: nowrap;
+    }
+
+    .main-header nav.navbar img.logo {
+        width: 60%;
+    }
+
+    .main-header .navbar-buttons {
+        width: 100%;
+    }
+
+    .navbar-buttons a {
+        padding: 10px 15px;
+    }
+
+    .ban-right-form form {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+
+    section.new-ser-banner,
+    section.sec-services {
+        padding: 30px 0
+    }
+
+    .pop-up-modal-bg2-img img {
+        min-height: 250px;
+        max-height: 250px;
+        top: -25px
+    }
+
+    section.new-ser-banner .banner-content .banner-heading {
+        font-size: 35px;
+        line-height: 45px
+    }
+
+    .flipclock {
+        padding: 6.6666666667vw;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .leaf {
+        margin: 0 .6666666667vw
+    }
+
+    .leaf::after {
+        margin-top: 1.3333333333vw;
+        font-size: 2.3333333333vw
+    }
+
+    .bottom,
+    .leaf-back,
+    .leaf-front,
+    .top {
+        height: 10.6666666667vw;
+        width: 20vw
+    }
+
+    .bottom span,
+    .leaf-back span,
+    .leaf-front span,
+    .top span {
+        height: 21.3333333333vw;
+        font-size: 13.3333333333vw;
+        line-height: 21.3333333333vw
+    }
+
+    .leaf._3-digits .bottom,
+    .leaf._3-digits .leaf-back,
+    .leaf._3-digits .leaf-front,
+    .leaf._3-digits .top {
+        width: 24.6666666667vw
+    }
+
+    .leaf-front,
+    .top {
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw
+    }
+
+    .bottom,
+    .leaf-back {
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw
+    }
+
+    .leaf-back {
+        top: 10.6666666667vw
+    }
+
+    section.new-ser-banner .banner-content .banner-para {
+        line-height: 25px;
+        font-size: 17px
+    }
+
+    .banner-content,
+    .cta-details,
+    .story-details {
+        text-align: center
+    }
+
+    .new-ser-banner .banner-btns button.start-btn {
+        font-size: 16px;
+        width: 193px;
+        margin: 20px auto 0
+    }
+
+    .form-wrap {
+        margin: 40px 0 0;
+        padding: 20px;
+        width: 100%
+    }
+
+    .form-wrap::before,
+    br {
+        display: none
+    }
+
+    .form-wrap h3.heading,
+    .sec-story-book .story-details h4 {
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .sec-story-book {
+        padding: 35px 0
+    }
+
+    .sec-story-book .story-details p {
+        padding: 0;
+        font-size: 17px
+    }
+
+    .sec-story-book .story-book img {
+        min-height: 340px;
+        max-height: 340px;
+        margin: 20px 0 0
+    }
+
+    .sec-story-book .story-details button.start-btn {
+        margin: 0 auto
+    }
+
+    .sec-portfolio .portfolio-title p,
+    .sec-process .process-title p,
+    .sec-services .services-title p {
+        font-size: 16px
+    }
+
+    .customer-feedback-wrap .feedback-box .feedback-details h4,
+    .sec-portfolio .portfolio-title h3,
+    .sec-services .services-title h4 {
+        font-size: 35px
+    }
+
+    .services-details h4 {
+        font-size: 20px
+    }
+
+    .services-inner-box {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 22px
+    }
+
+    .services-img img {
+        margin: 0 0 15px;
+        width: 60px;
+        min-height: 60px;
+        max-height: 60px
+    }
+
+    .sec-services .services-card {
+        margin: 0 0 15px;
+        padding: 35px
+    }
+
+    .cta-details h2,
+    .feedback-content-slider .slick-next::before,
+    .feedback-content-slider .slick-prev::before,
+    .sec-process .process-details h5,
+    .sec-process .process-details h6 {
+        font-size: 25px
+    }
+
+    .sec-portfolio .pt-portfolio-wrap {
+        gap: 20px;
+    }
+
+    .sec-portfolio .pt-new-img img {
+        width: 100px;
+        min-height: 100px;
+        max-height: 150px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    section.sec-portfolio,
+    section.sec-process {
+        padding: 50px 0
+    }
+
+    .sec-portfolio .nav-tabs .nav-link {
+        width: 120px;
+        margin-right: 0
+    }
+
+    .sec-process .process-title h4 {
+        font-size: 35px;
+        margin: 0 0 25px
+    }
+
+    .sec-process .process-card {
+        margin: 0 0 15px
+    }
+
+    .sec-process .process-card p {
+        font-size: 14px
+    }
+
+    .feedback-content-head h2 {
+        font-size: 25px;
+        margin: 0 10px
+    }
+
+    .customer-feedback-wrap .feedback-inner p {
+        font-size: 15px
+    }
+
+    .customer-feedbcack-images img {
+        width: 100%;
+        min-height: 250px;
+        max-height: 250px;
+        margin: 20px 0 0
+    }
+
+    section.sec-contact-form {
+        padding: 25px 0
+    }
+
+    .sec-contact-form .contact-image img {
+        min-height: 350px;
+        max-height: 350px
+    }
+
+    .sec-contact-form .contact-details h2 {
+        font-size: 50px
+    }
+
+    .sec-contact-form .contact-details p {
+        font-size: 16px;
+        line-height: 25px
+    }
+
+    .cta-details p,
+    .ft-details p {
+        font-size: 17px
+    }
+
+    footer {
+        padding: 17px 0
+    }
+
+    .sec-services .services-card p {
+        font-size: 16px;
+        height: 75px
+    }
+
+    .sec-services .services-details h5 {
+        font-size: 25px;
+        margin: 0 0 20px
+    }
+
+    .sec-services .services-title {
+        margin: 0 0 25px
+    }
+
+    .sec-services .services-details-img img {
+        width: 50px;
+        min-height: 50px;
+        max-height: 50px
+    }
+
+    .services-box {
+        display: block
+    }
+
+    .main-header nav.navbar a.navbar-brand {
+        width: 50%;
+    }
+
+    .main-header nav.navbar {
+        flex-wrap: nowrap;
+    }
+
+    .main-header nav.navbar img.logo {
+        width: 70%;
+    }
+
+    .main-header .navbar-buttons {
+        width: 70%;
+        gap: 20px;
+        justify-content: end;
+    }
+
+    .navbar-buttons a {
+        padding: 10px 15px;
+    }
+
+    .sec-process .process-inner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sec-process .process-card p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:575px) {
+
+    .customer-feedbcack-images img,
+    .pop-up-modal-bg2-img img,
+    .sec-contact-form .contact-image img {
+        min-height: 200px;
+        max-height: 200px;
+        top: -25px;
+    }
+
+    .customer-feedback-wrap .feedback-box .feedback-details h4,
+    .feedback-content-slider .slick-next::before,
+    .feedback-content-slider .slick-prev::before,
+    .pop-up-modal-bg2 .popup-modal-content h3 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .form-wrap::before,
+    br {
+        display: none
+    }
+
+    section.new-ser-banner,
+    section.sec-services {
+        padding: 30px 0
+    }
+
+    section.new-ser-banner .banner-content .banner-heading {
+        font-size: 30px;
+        line-height: 46px
+    }
+
+    .flipclock {
+        padding: 6.6666666667vw;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .leaf {
+        margin: 0 .6666666667vw
+    }
+
+    .leaf::after {
+        margin-top: 1.3333333333vw;
+        font-size: 2.3333333333vw
+    }
+
+    .bottom,
+    .leaf-back,
+    .leaf-front,
+    .top {
+        height: 10.6666666667vw;
+        width: 20vw
+    }
+
+    .bottom span,
+    .leaf-back span,
+    .leaf-front span,
+    .top span {
+        height: 21.3333333333vw;
+        font-size: 13.3333333333vw;
+        line-height: 21.3333333333vw
+    }
+
+    .leaf._3-digits .bottom,
+    .leaf._3-digits .leaf-back,
+    .leaf._3-digits .leaf-front,
+    .leaf._3-digits .top {
+        width: 24.6666666667vw
+    }
+
+    .leaf-front,
+    .top {
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw
+    }
+
+    .bottom,
+    .leaf-back {
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw
+    }
+
+    .leaf-back {
+        top: 10.6666666667vw
+    }
+
+    section.new-ser-banner .banner-content .banner-para {
+        line-height: 23px;
+        font-size: 15px
+    }
+
+    .banner-content,
+    .cta-details,
+    .story-details {
+        text-align: center
+    }
+
+    .new-ser-banner .banner-btns button.start-btn {
+        font-size: 16px;
+        width: 193px;
+        margin: 20px auto 0
+    }
+
+    .form-wrap {
+        margin: 40px 0 0;
+        padding: 20px;
+        width: 100%
+    }
+
+    .form-wrap h3.heading,
+    .sec-story-book .story-details h4 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .sec-story-book {
+        padding: 35px 0
+    }
+
+    .sec-story-book .story-details p {
+        padding: 0
+    }
+
+    .sec-story-book .story-book img {
+        min-height: 300px;
+        max-height: 300px
+    }
+
+    .sec-story-book .story-details button.start-btn {
+        margin: 0 auto
+    }
+
+    .sec-portfolio .portfolio-title p,
+    .sec-process .process-title p,
+    .sec-services .services-title p {
+        font-size: 16px
+    }
+
+    .sec-contact-form .contact-details h2,
+    .sec-portfolio .portfolio-title h3,
+    .sec-services .services-title h4 {
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .services-details h4 {
+        font-size: 18px
+    }
+
+    .sec-services-inner .services-inner,
+    .services-inner-box {
+        text-align: center;
+        display: block
+    }
+
+    .sec-process .process-card,
+    .sec-services .services-card,
+    .services-img img {
+        margin: 0 0 15px
+    }
+
+    .services-box {
+        display: block
+    }
+
+    .cta-details h2 {
+        font-size: 20px
+    }
+
+    section.sec-cta {
+        padding: 40px 0
+    }
+
+    section.sec-portfolio,
+    section.sec-process {
+        padding: 50px 0
+    }
+
+    .sec-portfolio .pt-new-img img {
+        width: 300px;
+        min-height: 200px;
+        max-height: 200px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .sec-process .process-title h4 {
+        font-size: 30px
+    }
+
+    .sec-process .process-card p {
+        font-size: 14px;
+        height: 50px
+    }
+
+    .feedback-content-head h2 {
+        font-size: 20px;
+        margin: 0 10px
+    }
+
+    .cta-details p,
+    .customer-feedback-wrap .feedback-inner p {
+        font-size: 14px
+    }
+
+    .customer-feedbcack-images img {
+        width: 80%;
+        margin: 20px 0 0
+    }
+
+    section.sec-contact-form {
+        padding: 25px 0
+    }
+
+    .sec-contact-form .contact-details p {
+        font-size: 16px;
+        line-height: 25px
+    }
+
+    footer {
+        padding: 17px 0
+    }
+
+    .ft-details p {
+        font-size: 17px
+    }
+
+    .cta-img {
+        top: -50px
+    }
+
+    .main-header nav.navbar a.navbar-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-header nav.navbar {
+        flex-wrap: wrap;
+    }
+
+    .main-header nav.navbar img.logo {
+        width: 70%;
+    }
+
+    .main-header .navbar-buttons {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar-buttons a {
+        padding: 10px 15px;
+    }
+
+    .sec-services .services-card {
+        min-height: 330px;
+        max-height: 330px;
+    }
+
+    .sec-portfolio .pt-portfolio-wrap {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 10px;
+    }
+
+    .sec-portfolio .pt-portfolio-wrap .pt-new-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .sec-process .process-inner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sec-process .process-card p {
+        text-align: center;
+    }
+}
