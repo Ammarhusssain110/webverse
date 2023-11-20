@@ -8,9 +8,9 @@
     <?php include 'includes/section/variable.php' ;?>
     <link rel="icon" href="images" type="image/png" sizes="">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 </head>

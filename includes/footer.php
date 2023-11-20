@@ -1,15 +1,3 @@
-<footer>
-    <div class="container">
-        <div class="row justify-content-start align-items-center">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                <div class="ft-details">
-                    <p>All Rights Reserved 2023 - LT-writing </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
 <?php include 'includes/section/modal.php';?>
 
 
@@ -73,15 +61,42 @@ $zopim(function() {
 });
 </script>
 <!-- live chat end here -->
+<!-- Recaptcha Start -->
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback" async defer></script>
+<script>
+$(document).on('click', '#bannerFormSubmit', function(e) {
+    e.preventDefault();
+    var parent = $(this).closest('form');
+    console.log(grecaptcha.getResponse(parent.find('.sbx-g-recaptcha').attr('data-widget-id')));
+    if (grecaptcha.getResponse(parent.find('.sbx-g-recaptcha').attr('data-widget-id')) == "") {
+        e.preventDefault();
+        parent.find('.captcha_validation').css('display', 'block');
+    } else {
+        $('.captcha_validation').css('display', 'none');
+        parent.submit();
+        return true;
+    }
+});
+
+function CaptchaCallback() {
+    jQuery('.sbx-g-recaptcha').each(function(index, el) {
+        var widgetId = grecaptcha.render(el, {
+            'sitekey': '6LfMuRUpAAAAAKonRGbr8xQXzKCwMQFMOxfe0oFF'
+        });
+        jQuery(this).attr('data-widget-id', widgetId);
+    });
+};
+</script>
+<!-- Recaptcha End -->
+
 
 
 <script src="assets/js/jquery-3.7.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/intlTelInput.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.2/build/js/utils.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 
-</html> 
+</html>

@@ -155,7 +155,8 @@ section.new-ser-banner .banner-content .banner-heading {
     text-transform: capitalize;
     font-size: 50px;
     line-height: 58px;
-    font-weight: 500
+    font-weight: 500;
+    margin: 25px 0;
 }
 
 section.new-ser-banner .banner-content .banner-para {
@@ -177,7 +178,7 @@ section.new-ser-banner .banner-content .banner-para {
     border-radius: 6px;
     min-height: 50px;
     max-height: 50px;
-    font-family: Gilroy-Medium;
+    ;
     transition: .3s ease-in-out;
     color: #fff;
 }
@@ -196,7 +197,7 @@ section.new-ser-banner .banner-content .banner-para {
     height: 50px;
     border-radius: 6px;
     padding: 10px;
-    margin: 12px 10px 0 0;
+    margin: 25px 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,10 +209,12 @@ section.new-ser-banner .banner-content .banner-para {
     font-weight: 400
 }
 
-.new-ser-banner .banner-btns button.start-btn:hover {
-    background: 0 0;
-    border: 2px solid #fff;
-    color: #ffff
+.new-ser-banner .banner-btns button.start-btn:hover,
+.sec-contact-form .form-group button.submit-btn:hover,
+.sec-story-book .story-details button.start-btn:hover {
+    border: 2px solid #4D05CB;
+    background-color: #0D0C43;
+    color: #fff;
 }
 
 .ban-right-form form {
@@ -231,13 +234,12 @@ section.new-ser-banner .banner-content .banner-para {
     font-size: 35px;
     line-height: 50px;
     font-weight: 400;
-    color: #000
+    color: #4d05cb;
 }
 
-.form-wrap h3.heading span {
-    color: #02dfbf
+.form-wrap p {
+    color: #4d05cb;
 }
-
 
 .form-wrap input,
 .form-wrap textarea {
@@ -398,6 +400,22 @@ section.new-ser-banner .banner-content .banner-para {
     z-index: 1
 }
 
+.banner-brands {
+    margin: 50px 0 20px;
+}
+
+.banner-brands .banner-brands-items {
+    display: flex;
+    align-items: center;
+}
+
+.banner-brands .banner-brands-items img {
+    width: 150px;
+    height: 50px;
+    object-fit: scale-down;
+    margin: 0 15px 0 0;
+}
+
 /* sec-banner css start here */
 
 /* sec-story  css start here */
@@ -439,7 +457,7 @@ section.new-ser-banner .banner-content .banner-para {
 /* sec-story  css end here */
 /* sec-cta css start here */
 section.sec-cta {
-    padding: 30px 0;
+    padding: 75px 0;
     background: url(../images/cta-bg.png) no-repeat;
     color: #fff;
     background-size: cover;
@@ -447,14 +465,33 @@ section.sec-cta {
     position: relative;
 }
 
+
+.cta-button a {
+    color: #fff;
+    font-size: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    margin: 0;
+    width: auto;
+    height: 40px;
+}
+
+.cta-details {
+    text-align: center;
+}
+
 .sec-cta button.btn.live-btn {
     width: 150px;
-    background: #091a39;
+    background: #4B05C6;
     border: 1px solid;
-    color: ;
     text-transform: capitalize;
     border-radius: 6px;
-    transition: .3s ease-in-out
+    transition: .3s ease-in-out;
+    color: #fff;
+    margin: 0 15px;
 }
 
 .sec-cta button.btn.live-btn:hover {
@@ -462,23 +499,30 @@ section.sec-cta {
     border: 1px solid #fff
 }
 
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cta-details h2 {
-    color: ;
     font-size: 44px;
     text-transform: capitalize;
     font-weight: 500;
-    margin: 0 0 20px
+    margin: 0 0 20px;
+    color: #fff;
 }
 
 .cta-details p {
     margin: 0 0 25px;
-    padding: 0;
-    font-size: 15px
+    padding: 0 100px 0;
+    font-size: 15px;
+    color: #fff;
+    line-height: 25px;
 }
 
 .cta-img {
-    position: relative;
-    top: -30px
+    right: -30px;
 }
 
 .cta-img img {
@@ -487,6 +531,7 @@ section.sec-cta {
     max-height: 250px;
     object-fit: contain;
     object-position: center;
+    position: relative;
 }
 
 /* sec-cta css  end here */
@@ -508,7 +553,7 @@ section.sec-portfolio {
 }
 
 .sec-portfolio .pt-new-img img {
-    width: 180px;
+    width: 350px;
     min-height: 250px;
     max-height: 250px;
     transform: scale(1);
@@ -520,28 +565,28 @@ section.sec-portfolio {
 }
 
 .sec-portfolio .nav-tabs .nav-link {
-    width: 155px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 0px;
-    margin-right: 20px;
-    padding-bottom: 20px;
-    font-size: 16px;
+    width: 154px;
+    border-radius: 8px;
+    font-size: 15px;
     font-weight: 700;
-    border: none
+    border: none;
+    background: #131313;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sec-portfolio .nav-tabs .nav-link.active {
-    color: ;
-    padding-bottom: 19px;
-    margin-bottom: -3px;
-    border-bottom: 3px solid
+    background: transparent;
+    color: #4D05CB;
+    border: 2px solid #4D05CB;
 }
 
 .sec-portfolio div#nav-tab {
-    border-bottom: 3px solid #E8E8E8;
     padding: 20px 0 0px;
-    margin: 0
+    margin: 0;
+    border: none;
 }
 
 .sec-portfolio .portfolio-title {
@@ -552,7 +597,7 @@ section.sec-portfolio {
     color: #091a39;
     font-size: 60px;
     font-weight: 700;
-    font-family: Gilroy-Bold
+
 }
 
 .sec-portfolio .portfolio-title p {
@@ -563,120 +608,121 @@ section.sec-portfolio {
 
 /* sec-portfolio css  end here */
 
-/* customer-feedback-wrap css  start here */
-
-section.customer-feedback-wrap {
+/* sec-testimonial css start here */
+.testimonials-bg {
+    position: relative;
     padding: 50px 0;
-    margin: 0;
-    overflow: hidden;
-    position: relative
 }
 
-.feedback-content-slider .slick-arrow {
-    top: inherit;
-    bottom: 0;
-    left: inherit;
-    position: absolute;
-    background: 0 0;
-    border: none;
-    font-size: 0;
-    z-index: 9
+.testi-content-head {
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
-.feedback-content-slider .slick-arrow:hover::before {
-    color: #a4a6a7
+.testi-content-head h2 {
+    color: #4D05CB;
+    padding: 0 0 0 15px !important;
+    font-size: 35px;
 }
 
-.feedback-content-slider .slick-prev {
-    right: 75px
+.testi-content h3 {
+    color: #131313;
+    padding: 10px 0;
+    font-weight: 300;
+    font-family: 'NoirPro-light';
 }
 
-.cross-btn,
-.feedback-content-slider .slick-next {
-    right: 20px
+.testi-content p {
+    padding: 10px 0 30px 0;
 }
 
-.feedback-content-slider .slick-prev::before {
-    content: "\f104"
-}
-
-.feedback-content-slider .slick-next::before {
-    content: "\f105"
-}
-
-.feedback-content-slider .slick-next::before,
-.feedback-content-slider .slick-prev::before {
-    font-family: "Font Awesome 6 Pro";
-    font-size: 30px;
-    background: 0 0;
+.testi-content h5 {
     color: #000;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    line-height: 37px;
-    display: block;
-    opacity: 1
 }
 
-.customer-feedbcack-images img {
+.testi-content h6 {
+    color: #4D05CB;
+    font-weight: 200;
+    font-family: 'NoirPro-light';
+}
+
+.testimonials-bg .owl-theme .owl-nav {
+    color: #0D0C43;
+    display: flex;
+    justify-content: end;
+}
+
+.testimonials-bg .owl-theme .owl-nav::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #0D0C43;
+    width: 85%;
+    bottom: 18px;
+    left: 0;
+}
+
+.testimonials-bg .owl-theme .owl-nav i {
+    font-size: 25px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.testimonials-bg .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #4D05CB;
+    text-decoration: none;
+}
+
+.testimonials-bg .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #4D05CB;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.testimonials-bg .owl-theme .owl-dots {
+    background-color: #fff;
+    position: absolute;
+    bottom: 3px;
+}
+
+.testimonials-bg .owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    border-radius: 0;
+    background: #0D0C43;
+    transition: .3s;
+}
+
+.testimonials-bg .testi-content-head img {
+    width: 150px;
+    min-height: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonials-bg .testimonials-img img {
     width: 100%;
-    min-height: 460px;
-    max-height: 460px;
+    min-height: 500px;
+    max-height: 500px;
     object-fit: contain;
     object-position: center;
 }
 
-.customer-feedback-content {
-    padding: 0;
-    margin: 0
-}
+/* sec-testimoinal css end here */
 
-.customer-feedback-wrap .feedback-inner p {
-    padding: 15px 0 20px;
-    margin: 0 0 15px;
-    border-bottom: 1px solid #091a39;
-    color: #091a39;
-    font-size: 16px
-}
-
-.customer-feedback-wrap .feedback-box .feedback-details h4 {
-    padding: 0;
-    margin: 0;
-    color: #091a39;
-    font-size: 39px;
-    line-height: 46px;
-    text-transform: capitalize;
-    font-weight: 700
-}
-
-.feedback-content-head h2 {
-    color: #091a39;
-    font-size: 25px;
-    text-transform: capitalize;
-    font-weight: 500;
-    margin: 0 10px;
-    margin-bottom: 10px;
-}
-
-.feedback-info p {
-    font-size: 18px;
-    font-weight: 700;
-    color: #091a39
-}
-
-/* customer-feedback-wrap css  end here */
-
-
+/* sec-services css start here */
 section.sec-services {
     background: url(../images/services-bg.png) no-repeat;
-    padding: 60px 0;
+    padding: 100px 0 100px 0;
     margin: 0;
     position: relative;
     overflow: hidden;
     background-size: cover;
-    background-position: center center;
+    background-position: 100% 100%;
 }
 
 .sec-process .process-title,
@@ -688,64 +734,68 @@ section.sec-services {
 
 .sec-process .process-title h4,
 .sec-services .services-title h4 {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
-    margin: 0 0 35px;
+    margin: 0 0 25px;
     padding: 0
 }
 
-.sec-process .process-title p,
 .sec-services .services-title p {
     font-size: 20px;
     color: #fff
 }
 
 .sec-services .services-card {
-    padding: 35px 15px;
+    padding-top: 35px;
     background: #292929;
-    margin: 0;
-    border-radius: 0;
-    text-align: center;
-    min-height: 300px;
-    max-height: 300px
+    margin: 0 20px;
+    border-radius: 20px;
 }
 
 .sec-services .services-details-img img {
-    width: 40px;
-    min-height: 40px;
-    max-height: 40px;
+    width: 100%;
+    min-height: 320px;
+    max-height: 320px;
     object-fit: cover;
     object-position: center;
-    margin: 0 0 20px
 }
 
 .sec-process .process-details,
 .sec-services .services-details {
-    color: #fff
+    color: #0D0C43;
+    padding: 5px 15px 0;
+    margin: 0;
 }
 
 .sec-services .services-card p {
     font-size: 16px;
     color: #fff;
     font-weight: 300;
-    line-height: 28px;
+    line-height: 25px;
     padding: 0 10px 0 0;
-    height: 75px
+    margin: 0 0 15px 0;
 }
 
-.sec-process .process-details h5,
 .sec-services .services-details h5 {
-    font-size: 20px;
-    font-weight: 200
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'NoirPro-medium';
+    color: #fff;
 }
+
 
 .sec-services-inner {
-    padding: 40px 0;
+    padding: 35px 0;
     margin: 0;
     overflow: hidden;
     position: relative;
-    background:
+    background: #0C0A10;
 }
+
+.services-details {
+    color: #fff;
+}
+
 
 .services-inner-box {
     display: flex;
@@ -756,23 +806,29 @@ section.sec-services {
 .services-box {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    background: #232323;
+    padding: 15px 15px;
+    margin: 0;
 }
 
 .services-img img {
-    width: 75px;
-    min-height: 74px;
-    max-height: 75px;
-    object-fit: cover;
+    width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    object-fit: contain;
     object-position: center;
     margin: 0 15px 0 0
 }
 
-.services-details h4,
-.services-details h4 span {
-    font-size: 25px;
-    font-family: Gilroy-SemiBold;
+.services-details h4 {
+    font-size: 17px;
+    font-family: 'NoirPro-Medium';
+    font-weight: 200;
 }
+
+/* sec-services css  end here */
+
 
 section.sec-process {
     background: url(../images/process.png) center/cover no-repeat;
@@ -785,10 +841,20 @@ section.sec-process {
 
 .sec-process .process-card {
     padding: 25px 20px;
-    background: #292929;
+    background: #fff;
     margin: 0;
-    border-radius: 0
+    border-radius: 10px;
+    border-top: 10px solid #4D05CB;
 }
+
+.procees-img img {
+    width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
 
 .pop-up-modal-bg .modal-body,
 .pop-up-modal-bg2 .modal-content {
@@ -800,9 +866,9 @@ section.sec-process {
 
 .sec-process .process-inner {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 15px
+    justify-content: start;
+    align-items: start;
+    margin: 0 0 5px;
 }
 
 .sec-process .process-details-img img {
@@ -815,26 +881,41 @@ section.sec-process {
 
 .sec-process .process-details h6 {
     font-size: 20px;
-    text-transform: capitalize;
-    color:
+    color: #E0CEFF;
+    background-color: #210E6C;
+    display: block;
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'NoirPro-light';
+    font-weight: 100;
+}
+
+.sec-process .process-details h5 {
+    font-size: 20px;
+    font-family: 'NoirPro-medium';
+    font-weight: 500;
+    color: #0D0C43;
 }
 
 .sec-process .process-card p {
     font-size: 16px;
-    color: #fff;
-    font-weight: 300;
+    color: #0D0C43;
+    font-weight: 100;
     line-height: 25px;
     min-height: fit-content;
     max-height: fit-content;
-    height: 80px
 }
 
+/* sec-contact-form start here */
 section.sec-contact-form {
     padding: 50px 0;
     margin: 0;
     position: relative;
     overflow: hidden;
-    background: #101114;
+    background: linear-gradient(360deg, rgba(16, 19, 23, 0.5) 0%, rgba(16, 19, 23, 0.5) 100%), url(../images/form.png)no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .sec-contact-form .contact-image img {
@@ -848,22 +929,39 @@ section.sec-contact-form {
 .sec-contact-form .form-group {
     margin: 0 0 20px;
     position: relative;
-    padding: 10px 0 0
+    padding: 10px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sec-contact-form .form-group input {
     background: 0 0;
-    font-size: 14px;
+    font-size: 17px;
     width: 100%;
-    height: 40px;
-    border-radius: 0;
+    height: 50px;
     color: #fff;
-    border: none;
-    border-bottom: 2px solid #fff;
-    padding: 0;
+    padding: 20px 15px;
     margin: 0;
-    text-transform: capitalize
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-radius: 7px;
 }
+
+.sec-contact-form select.form-select {
+    background: 0 0;
+    font-size: 17px;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
 
 .sec-contact-form .form-group input::placeholder {
     color: #fff;
@@ -880,19 +978,6 @@ section.sec-contact-form {
     margin: 0 0 20px
 }
 
-.sec-contact-form .contact-details h2 {
-    color: #fff;
-    margin: 0 0 20px;
-    padding: 0;
-    line-height: 61px;
-    font-size: 54px;
-}
-
-.sec-contact-form .contact-details p {
-    color: #fff;
-    font-size: 20px;
-    line-height: 30px
-}
 
 .sec-contact-form .form-group textarea {
     width: 100%;
@@ -900,9 +985,8 @@ section.sec-contact-form {
     background: 0 0;
     color: #fff;
     font-size: 20px;
-    border: none;
-    border-radius: 0;
-    border-bottom: 2px solid #fff;
+    border-radius: 7px;
+    border: 1px solid #fff;
     resize: none;
     outline: 0;
     padding: 10px 5px;
@@ -914,6 +998,29 @@ section.sec-contact-form {
     color: #fff;
     border: 1px solid #fff
 }
+
+.sec-contact-form .contact-form-details h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.sec-contact-form .contact-form-details p {
+    font-family: 'NoirPro-light';
+    color: #fff;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.sec-contact-form .form-group button.submit-btn i {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+
+
+/* sec-contact-form end here */
+
+/* sec-footer start here */
 
 footer {
     background: #000;
@@ -981,7 +1088,7 @@ footer {
     padding: 0 0 20px;
     font-size: 40px;
     font-weight: 700;
-    font-family: Gilroy-bold
+
 }
 
 .form-floating input.form-control {
@@ -992,14 +1099,14 @@ footer {
     font-size: 17px;
     font-weight: 500;
     color: #000;
-    font-family: Gilroy-medium
+
 }
 
 .pop-up-modal-bg2 .popup-modal-content h4 {
     color: #fff;
     padding: 5px 0;
     font-weight: 700;
-    font-family: Gilroy-bold
+
 }
 
 .pop-up-modal-bg2 .popup-modal-head {
@@ -1026,7 +1133,7 @@ footer {
     border: 2px solid #000;
     color: black;
     font-size: 18px;
-    font-family: Gilroy-medium;
+    ;
     font-weight: 500
 }
 
@@ -1044,6 +1151,9 @@ footer {
     position: absolute;
     top: 20px
 }
+
+/* sec-footer end here */
+
 
 @media only screen and (min-width:1200px) and (max-width:1399px) {
 
@@ -1188,10 +1298,7 @@ footer {
         font-size: 17px
     }
 
-    .customer-feedback-wrap .feedback-box .feedback-details h4 {
-        font-size: 28px;
-        line-height: 35px;
-    }
+
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -1374,7 +1481,7 @@ footer {
         padding: 50px 0
     }
 
-    .customer-feedback-wrap .feedback-box .feedback-details h4,
+    .feedback-box .feedback-details h4,
     .sec-portfolio .portfolio-title h3 {
         font-size: 35px
     }
@@ -1400,21 +1507,8 @@ footer {
         font-size: 14px
     }
 
-    .feedback-content-head h2 {
-        font-size: 25px;
-        margin: 0 10px
-    }
 
-    .customer-feedback-wrap .feedback-inner p {
-        font-size: 15px
-    }
 
-    .customer-feedbcack-images img {
-        width: 50%;
-        min-height: 300px;
-        max-height: 300px;
-        margin: 20px 0 0
-    }
 
     section.sec-contact-form {
         padding: 25px 0
@@ -1638,7 +1732,7 @@ footer {
         font-size: 16px
     }
 
-    .customer-feedback-wrap .feedback-box .feedback-details h4,
+    .feedback-box .feedback-details h4,
     .sec-portfolio .portfolio-title h3,
     .sec-services .services-title h4 {
         font-size: 35px
@@ -1718,9 +1812,6 @@ footer {
         margin: 0 10px
     }
 
-    .customer-feedback-wrap .feedback-inner p {
-        font-size: 15px
-    }
 
     .customer-feedbcack-images img {
         width: 100%;
@@ -1814,6 +1905,32 @@ footer {
 
 @media only screen and (min-width:300px) and (max-width:575px) {
 
+    .sec-portfolio .nav-tabs .nav-link {
+        margin: 0 0 15px 0;
+    }
+
+    .sec-services .services-details h5 {
+        font-size: 20px;
+    }
+
+    .sec-services .services-card p {
+        font-size: 15px;
+        overflow-y: scroll;
+        height: 120px;
+    }
+
+    .sec-services .services-details-img img {
+        min-height: 200px;
+        max-height: 200px;
+        object-fit: scale-down;
+    }
+
+    .cta-img img {
+        min-height: 150px;
+        max-height: 150px;
+        top: 20px;
+    }
+
     .customer-feedbcack-images img,
     .pop-up-modal-bg2-img img,
     .sec-contact-form .contact-image img {
@@ -1822,7 +1939,7 @@ footer {
         top: -25px;
     }
 
-    .customer-feedback-wrap .feedback-box .feedback-details h4,
+    .feedback-box .feedback-details h4,
     .feedback-content-slider .slick-next::before,
     .feedback-content-slider .slick-prev::before,
     .pop-up-modal-bg2 .popup-modal-content h3 {
@@ -1841,8 +1958,8 @@ footer {
     }
 
     section.new-ser-banner .banner-content .banner-heading {
-        font-size: 30px;
-        line-height: 46px
+        font-size: 25px;
+        line-height: 40px;
     }
 
     .flipclock {
@@ -1902,8 +2019,8 @@ footer {
     }
 
     section.new-ser-banner .banner-content .banner-para {
-        line-height: 23px;
-        font-size: 15px
+        line-height: 25px;
+        font-size: 16px;
     }
 
     .banner-content,
@@ -1926,8 +2043,8 @@ footer {
 
     .form-wrap h3.heading,
     .sec-story-book .story-details h4 {
-        font-size: 20px;
-        line-height: 27px;
+        font-size: 25px;
+        line-height: 30px;
     }
 
     .sec-story-book {
@@ -1956,13 +2073,13 @@ footer {
     .sec-contact-form .contact-details h2,
     .sec-portfolio .portfolio-title h3,
     .sec-services .services-title h4 {
-        font-size: 25px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 30px;
         margin-bottom: 10px;
     }
 
     .services-details h4 {
-        font-size: 18px
+        font-size: 18px;
     }
 
     .sec-services-inner .services-inner,
@@ -1978,7 +2095,8 @@ footer {
     }
 
     .services-box {
-        display: block
+        display: block;
+        margin: 0 0 15px 0;
     }
 
     .cta-details h2 {
@@ -1995,10 +2113,10 @@ footer {
     }
 
     .sec-portfolio .pt-new-img img {
-        width: 300px;
+        width: 100%;
         min-height: 200px;
         max-height: 200px;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center;
     }
 
@@ -2017,7 +2135,7 @@ footer {
     }
 
     .cta-details p,
-    .customer-feedback-wrap .feedback-inner p {
+    .feedback-inner p {
         font-size: 14px
     }
 
@@ -2073,14 +2191,11 @@ footer {
     }
 
     .sec-services .services-card {
-        min-height: 330px;
-        max-height: 330px;
+        min-height: 300px;
     }
 
     .sec-portfolio .pt-portfolio-wrap {
-        grid-template-columns: 1fr 1fr;
-        display: grid;
-        gap: 10px;
+        gap: 5px;
     }
 
     .sec-portfolio .pt-portfolio-wrap .pt-new-img {
@@ -2094,7 +2209,5 @@ footer {
         text-align: center;
     }
 
-    .sec-process .process-card p {
-        text-align: center;
-    }
+ 
 }
